@@ -1,0 +1,5 @@
+rootProject.name = 'AppgainTask'
+include ':react-native-appgain-sdk-library'
+project(':react-native-appgain-sdk-library').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-appgain-sdk-library/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
